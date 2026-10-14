@@ -1,0 +1,18 @@
+# pykan checkpoints
+model/
+*.ckpt
+
+# 600 dpi TIFFs are rebuilt by regenerate_figures.py
+figures/*.tiff
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+env/
+
+# data (deposited separately, see README)
+reactivity_dataset.csv
+
+.DS_Store
