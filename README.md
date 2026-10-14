@@ -91,7 +91,7 @@ and a 600 dpi TIFF; only the PDFs are committed.
 
 Please cite the paper and the archived release:
 
-> A. Acosta-García and A. Vela, *Symbolic recovery of CRDFT reactivity descriptors: a controlled benchmark of Kolmogorov--Arnold networks, sparse identification and genetic programming, submitted.
+> A. Acosta-García and A. Vela, *Symbolic recovery of CRDFT reactivity descriptors: a controlled benchmark of Kolmogorov--Arnold networks, sparse identification and genetic programming*, submitted.
 
 Code DOI: []
 
