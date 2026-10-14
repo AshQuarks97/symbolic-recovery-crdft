@@ -1,6 +1,6 @@
 # Symbolic recovery of CRDFT reactivity descriptors
 
-Code and results for the paper *Symbolic recovery of CRDFT reactivity descriptors: a controlled benchmark of Kolmogorov--Arnold networks, sparse identification and genetic programming*, submitted to *Digital Discovery*.
+Code and results for the paper *Symbolic recovery of CRDFT reactivity descriptors: a controlled benchmark of Kolmogorov-Arnold networks, sparse identification and genetic programming*, submitted to *Digital Discovery*.
 
 The eight global CDFT descriptors are exact algebraic functions of the vertical
 ionization potential and electron affinity, so the target of the regression is
