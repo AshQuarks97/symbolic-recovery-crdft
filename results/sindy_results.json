@@ -1,0 +1,283 @@
+{
+  "n_molecules": 131375,
+  "data_sha256": "f03f5f28e46a6cdf660100bbfd1ee5b1825d3bdb17ddd255231155cd16e752b3",
+  "synthetic": false,
+  "config": {
+    "threshold_affine": 0.05,
+    "threshold_log": 0.15,
+    "ridge": 1e-06,
+    "sigmas": [
+      0.1,
+      0.2,
+      0.4
+    ],
+    "noise_seeds": [
+      0,
+      7,
+      21,
+      42,
+      123
+    ]
+  },
+  "descriptors": {
+    "mu": {
+      "closed_form": "-EA/2 - IP/2",
+      "match": true,
+      "r2": 1.0,
+      "wall_s": 0.016221795231103897,
+      "coef": {
+        "IP": -0.5000000000000001,
+        "EA": -0.49999999999999994
+      },
+      "support_ok": null,
+      "prefactor": null,
+      "ls_offsupport_exact": null,
+      "threshold_range": null
+    },
+    "chi": {
+      "closed_form": "EA/2 + IP/2",
+      "match": true,
+      "r2": 1.0,
+      "wall_s": 0.01406479999423027,
+      "coef": {
+        "IP": 0.5000000000000001,
+        "EA": 0.49999999999999994
+      },
+      "support_ok": null,
+      "prefactor": null,
+      "ls_offsupport_exact": null,
+      "threshold_range": null
+    },
+    "eta": {
+      "closed_form": "-EA + IP",
+      "match": true,
+      "r2": 1.0,
+      "wall_s": 0.013798881322145462,
+      "coef": {
+        "IP": 1.0000000000000004,
+        "EA": -0.9999999999999993
+      },
+      "support_ok": null,
+      "prefactor": null,
+      "ls_offsupport_exact": null,
+      "threshold_range": null
+    },
+    "S": {
+      "closed_form": "1/eta",
+      "match": true,
+      "r2": 1.0,
+      "wall_s": 0.020870070904493332,
+      "coef": {
+        "chi": 0.0,
+        "eta": -1.0000000000000007,
+        "Aplus": 0.0,
+        "Aminus": 0.0
+      },
+      "support_ok": true,
+      "prefactor": 0.9999999999999867,
+      "ls_offsupport_exact": 2.0768142584792954e-15,
+      "threshold_range": [
+        0.01,
+        0.9
+      ]
+    },
+    "Nmax": {
+      "closed_form": "chi/eta",
+      "match": true,
+      "r2": 1.0,
+      "wall_s": 0.02127007022500038,
+      "coef": {
+        "chi": 1.0,
+        "eta": -1.0000000000000002,
+        "Aplus": 0.0,
+        "Aminus": 0.0
+      },
+      "support_ok": true,
+      "prefactor": 0.9999999999999768,
+      "ls_offsupport_exact": 2.4932920728090693e-15,
+      "threshold_range": [
+        0.01,
+        0.9
+      ]
+    },
+    "omega": {
+      "closed_form": "chi**2/(2*eta)",
+      "match": true,
+      "r2": 1.0,
+      "wall_s": 0.02107495442032814,
+      "coef": {
+        "chi": 2.0000000000000004,
+        "eta": -0.9999999999999999,
+        "Aplus": 0.0,
+        "Aminus": 0.0
+      },
+      "support_ok": true,
+      "prefactor": 0.4999999999999832,
+      "ls_offsupport_exact": 5.6306729089389015e-15,
+      "threshold_range": [
+        0.01,
+        0.9
+      ]
+    },
+    "omega_plus": {
+      "closed_form": "A_plus**2/(16*eta)",
+      "match": true,
+      "r2": 1.0,
+      "wall_s": 0.02080913633108139,
+      "coef": {
+        "chi": 0.0,
+        "eta": -0.9999999999999836,
+        "Aplus": 2.0000000000000133,
+        "Aminus": 0.0
+      },
+      "support_ok": true,
+      "prefactor": 0.0624999999999982,
+      "ls_offsupport_exact": 1.9767343379097966e-13,
+      "threshold_range": [
+        0.01,
+        0.9
+      ]
+    },
+    "omega_minus": {
+      "closed_form": "A_minus**2/(16*eta)",
+      "match": true,
+      "r2": 1.0,
+      "wall_s": 0.0213070847094059,
+      "coef": {
+        "chi": 0.0,
+        "eta": -1.0000000000000004,
+        "Aplus": 0.0,
+        "Aminus": 2.000000000000001
+      },
+      "support_ok": true,
+      "prefactor": 0.06249999999999823,
+      "ls_offsupport_exact": 2.9063378140164827e-14,
+      "threshold_range": [
+        0.01,
+        0.9
+      ]
+    }
+  },
+  "noise": [
+    {
+      "sigma": 0.1,
+      "name": "S",
+      "ls_off": 0.028774089418437065,
+      "ls_err": 0.009359481671615644,
+      "st_support": "5/5",
+      "st_err": 0.0011159814789844403
+    },
+    {
+      "sigma": 0.1,
+      "name": "Nmax",
+      "ls_off": 0.028774089418435095,
+      "ls_err": 0.020460712212746524,
+      "st_support": "5/5",
+      "st_err": 0.0016429142806620779
+    },
+    {
+      "sigma": 0.1,
+      "name": "omega",
+      "ls_off": 0.028774089418432937,
+      "ls_err": 0.0204607122127483,
+      "st_support": "5/5",
+      "st_err": 0.001642914280662522
+    },
+    {
+      "sigma": 0.1,
+      "name": "omega_plus",
+      "ls_off": 0.028774089418316738,
+      "ls_err": 0.009359481671593128,
+      "st_support": "5/5",
+      "st_err": 0.0009257649779750299
+    },
+    {
+      "sigma": 0.1,
+      "name": "omega_minus",
+      "ls_off": 0.020460712212764066,
+      "ls_err": 0.028774089418437575,
+      "st_support": "5/5",
+      "st_err": 0.002171656200669991
+    },
+    {
+      "sigma": 0.2,
+      "name": "S",
+      "ls_off": 0.037404739426295144,
+      "ls_err": 0.01024276885544173,
+      "st_support": "5/5",
+      "st_err": 0.0021398176104956202
+    },
+    {
+      "sigma": 0.2,
+      "name": "Nmax",
+      "ls_off": 0.035817078833786084,
+      "ls_err": 0.029100114845490865,
+      "st_support": "5/5",
+      "st_err": 0.003246103694222602
+    },
+    {
+      "sigma": 0.2,
+      "name": "omega",
+      "ls_off": 0.03581707883378663,
+      "ls_err": 0.029100114845490042,
+      "st_support": "5/5",
+      "st_err": 0.0032461036942230902
+    },
+    {
+      "sigma": 0.2,
+      "name": "omega_plus",
+      "ls_off": 0.037404739426268985,
+      "ls_err": 0.010588855643405925,
+      "st_support": "5/5",
+      "st_err": 0.002171694624685738
+    },
+    {
+      "sigma": 0.2,
+      "name": "omega_minus",
+      "ls_off": 0.02856253783974454,
+      "ls_err": 0.03547099204581465,
+      "st_support": "5/5",
+      "st_err": 0.004478216481566899
+    },
+    {
+      "sigma": 0.4,
+      "name": "S",
+      "ls_off": 0.1422605732941084,
+      "ls_err": 0.04430859554012616,
+      "st_support": "5/5",
+      "st_err": 0.00480082181360122
+    },
+    {
+      "sigma": 0.4,
+      "name": "Nmax",
+      "ls_off": 0.14226057329410607,
+      "ls_err": 0.09756721216934627,
+      "st_support": "3/5",
+      "st_err": 0.0475595952897363
+    },
+    {
+      "sigma": 0.4,
+      "name": "omega",
+      "ls_off": 0.1422605732941041,
+      "ls_err": 0.09756721216934867,
+      "st_support": "3/5",
+      "st_err": 0.04755959528973641
+    },
+    {
+      "sigma": 0.4,
+      "name": "omega_plus",
+      "ls_off": 0.14226057329398864,
+      "ls_err": 0.04430859554010469,
+      "st_support": "4/5",
+      "st_err": 0.017094046675717255
+    },
+    {
+      "sigma": 0.4,
+      "name": "omega_minus",
+      "ls_off": 0.09756721216936318,
+      "ls_err": 0.14226057329410877,
+      "st_support": "5/5",
+      "st_err": 0.007181700672940683
+    }
+  ]
+}
