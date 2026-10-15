@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+#PBS -N kan-crdft
+#PBS -o kan-crdft.out
+#PBS -e kan-crdft.err
+#PBS -l walltime=04:00:00
+#PBS -l nodes=1:ppn=8
+# #PBS -q <queue>              # pin ONE queue / node type
+#
+# PBS/Torque variant of 02_run_kan.slurm. Submit with: qsub hpc/02b_run_kan.pbs
+set -euo pipefail
+
+VENV="${VENV:-$HOME/kan-crdft-venv}"
+source "$VENV/bin/activate"
+
+# PBS has no cpus-per-task variable; derive it from the node file.
+if [ -n "${PBS_NODEFILE:-}" ]; then
+    KAN_THREADS=$(wc -l < "$PBS_NODEFILE")
+else
+    KAN_THREADS="${KAN_THREADS:-1}"
+fi
+export KAN_THREADS
+export OMP_NUM_THREADS="$KAN_THREADS" MKL_NUM_THREADS="$KAN_THREADS"
+export OPENBLAS_NUM_THREADS="$KAN_THREADS" NUMEXPR_NUM_THREADS="$KAN_THREADS"
+export MPLBACKEND=Agg
+
+cd "${PBS_O_WORKDIR:-$PWD}"
+
+echo "=== node check ==="
+python hpc/01_node_check.py
+echo
+echo "=== running (KAN_THREADS=$KAN_THREADS) ==="
+START=$(date +%s)
+jupyter nbconvert --to notebook --execute KAN_from_CRDFT.ipynb \
+    --output KAN_from_CRDFT_executed.ipynb --ExecutePreprocessor.timeout=-1
+echo "=== finished in $(( $(date +%s) - START )) s ==="
+ls -la KAN_from_CRDFT_executed.ipynb results/ figures/ 2>/dev/null || true
