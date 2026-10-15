@@ -2,7 +2,7 @@
 
 Code and results for the paper *Symbolic recovery of CRDFT reactivity descriptors: a controlled benchmark of Kolmogorov-Arnold networks, sparse identification and genetic programming*, submitted to *Digital Discovery*.
 
-The eight global CDFT descriptors are exact algebraic functions of the vertical
+The eight global CRDFT descriptors are exact algebraic functions of the vertical
 ionization potential and electron affinity, so the target of the regression is
 known to machine precision. That makes them a benchmark on which three symbolic
 regression methods can be compared without ambiguity about what counts as the
