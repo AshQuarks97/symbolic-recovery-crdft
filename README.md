@@ -20,7 +20,6 @@ Ashley Acosta-García (bryan.acosta@cinvestav.mx) and Alberto Vela
 | `KAN_from_CRDFT.ipynb` | KAN study: direct fits, the logarithmic route, symbolic export, and the seed, spline, noise and training-size sweeps |
 | `PySR_from_CRDFT.ipynb` | PySR baseline: raw and pruned expressions, seed study, operator ablation |
 | `SINDy_from_CRDFT.ipynb` | SINDy (STLSQ) baseline: affine and log-space fits, threshold sweep, four-method comparison |
-| `*_executed.ipynb` | the same notebooks as run for the paper, outputs included |
 | `rsc_style.py`, `figures_rsc.py` | journal-format figures |
 | `regenerate_figures.py` | rebuilds every figure from `results/`, without refitting |
 | `extract_kan_results.py` | pulls the KAN numbers out of the executed notebook into JSON |
