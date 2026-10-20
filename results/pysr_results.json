@@ -1,0 +1,180 @@
+{
+  "n_molecules": 131375,
+  "data_sha256": "f03f5f28e46a6cdf660100bbfd1ee5b1825d3bdb17ddd255231155cd16e752b3",
+  "synthetic": false,
+  "config": {
+    "niterations": 60,
+    "subsample": 2000,
+    "maxsize": 18,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "prune_tol": 1e-05,
+    "snap_tol": 0.0001,
+    "rel_tol": 1e-06
+  },
+  "descriptors": {
+    "mu": {
+      "raw": "-0.5*EA - 0.5*IP",
+      "clean": "-EA/2 - IP/2",
+      "match": true,
+      "ops_raw": 4,
+      "ops_canonical": 4,
+      "pruned": 0.0,
+      "match_abs": true,
+      "clean_abs": "-EA/2 - IP/2",
+      "r2_raw": 1.0,
+      "r2_clean": 1.0,
+      "wall_s": 28.559463500976562,
+      "seeds": {
+        "0": true,
+        "1": true,
+        "2": true
+      },
+      "square_all": true,
+      "anchor_wall_s": 0.2531372271478176
+    },
+    "chi": {
+      "raw": "0.5*EA + 0.5*IP",
+      "clean": "EA/2 + IP/2",
+      "match": true,
+      "ops_raw": 3,
+      "ops_canonical": 3,
+      "pruned": 0.0,
+      "match_abs": true,
+      "clean_abs": "EA/2 + IP/2",
+      "r2_raw": 1.0,
+      "r2_clean": 1.0,
+      "wall_s": 13.737709045410156,
+      "seeds": {
+        "0": true,
+        "1": true,
+        "2": true
+      },
+      "square_all": true,
+      "anchor_wall_s": 0.014493174850940704
+    },
+    "eta": {
+      "raw": "-1.0*EA + IP + 1.99999999894729e-8",
+      "clean": "-EA + IP",
+      "match": true,
+      "ops_raw": 3,
+      "ops_canonical": 1,
+      "pruned": 2.162227476619547e-09,
+      "match_abs": true,
+      "clean_abs": "-EA + IP",
+      "r2_raw": 1.0,
+      "r2_clean": 1.0,
+      "wall_s": 13.68689489364624,
+      "seeds": {
+        "0": true,
+        "1": true,
+        "2": true
+      },
+      "square_all": true,
+      "anchor_wall_s": 0.012293048202991486
+    },
+    "S": {
+      "raw": "1.0/(eta - 7.119411e-8)",
+      "clean": "1/eta",
+      "match": true,
+      "ops_raw": 2,
+      "ops_canonical": 1,
+      "pruned": 7.696893118802262e-09,
+      "match_abs": true,
+      "clean_abs": "1/eta",
+      "r2_raw": 0.9999999999999937,
+      "r2_clean": 1.0,
+      "wall_s": 13.01654839515686,
+      "seeds": {
+        "0": true,
+        "1": true,
+        "2": true
+      },
+      "square_all": true,
+      "anchor_wall_s": 0.013041719794273376
+    },
+    "Nmax": {
+      "raw": "chi/(eta - 6.123446e-8)",
+      "clean": "chi/eta",
+      "match": true,
+      "ops_raw": 2,
+      "ops_canonical": 1,
+      "pruned": 6.620141656561744e-09,
+      "match_abs": true,
+      "clean_abs": "chi/eta",
+      "r2_raw": 0.9999999999999972,
+      "r2_clean": 1.0,
+      "wall_s": 13.395233392715454,
+      "seeds": {
+        "0": true,
+        "1": true,
+        "2": true
+      },
+      "square_all": true,
+      "anchor_wall_s": 0.01923927292227745
+    },
+    "omega": {
+      "raw": "0.5*chi*(chi - 0.0008278298 + 0.0008278298)/(eta - 0.0008278693 + 0.0008278298)",
+      "clean": "chi**2/(2*eta)",
+      "match": true,
+      "ops_raw": 7,
+      "ops_canonical": 3,
+      "pruned": 4.270399295341831e-09,
+      "match_abs": false,
+      "clean_abs": "5836452*chi**2/(11672904*eta - 1)",
+      "r2_raw": 0.9999999999999994,
+      "r2_clean": 1.0,
+      "wall_s": 20.169513702392578,
+      "seeds": {
+        "0": true,
+        "1": true,
+        "2": true
+      },
+      "square_all": true,
+      "anchor_wall_s": 0.02145520970225334
+    },
+    "omega_plus": {
+      "raw": "0.06249999999991*A_plus**2/eta",
+      "clean": "A_plus**2/(16*eta)",
+      "match": true,
+      "ops_raw": 3,
+      "ops_canonical": 3,
+      "pruned": 0.0,
+      "match_abs": true,
+      "clean_abs": "A_plus**2/(16*eta)",
+      "r2_raw": 1.0,
+      "r2_clean": 1.0,
+      "wall_s": 13.90128493309021,
+      "seeds": {
+        "0": true,
+        "1": true,
+        "2": true
+      },
+      "square_all": true,
+      "anchor_wall_s": 0.024161305278539658
+    },
+    "omega_minus": {
+      "raw": "0.0625*(A_minus**2 + 0.00390625/(-A_minus**2 + A_minus) + 0.00390625/A_minus**2)/eta",
+      "clean": "A_minus**2/(16*eta)",
+      "match": true,
+      "ops_raw": 10,
+      "ops_canonical": 3,
+      "pruned": 1.047876538170977e-08,
+      "match_abs": false,
+      "clean_abs": "(256*A_minus**4*(A_minus - 1) - 1)/(4096*A_minus**2*eta*(A_minus - 1))",
+      "r2_raw": 1.0,
+      "r2_clean": 1.0,
+      "wall_s": 15.512750625610352,
+      "seeds": {
+        "0": true,
+        "1": true,
+        "2": true
+      },
+      "square_all": true,
+      "anchor_wall_s": 0.02129724621772766
+    }
+  }
+}
