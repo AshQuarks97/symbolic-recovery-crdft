@@ -111,7 +111,7 @@ Please cite the paper and the archived release:
 
 > A. Acosta-García and A. Vela, *Symbolic recovery of CRDFT reactivity descriptors: a controlled benchmark of Kolmogorov--Arnold networks, sparse identification and genetic programming*, submitted.
 
-Code DOI: []
+URL Code DOI: <https://doi.org/10.5281/zenodo.23507269>
 
 Cite the concept DOI to refer to the project as a whole, and the version DOI of a
 release to refer to the exact code that produced a given result.
